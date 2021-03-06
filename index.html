@@ -2,6 +2,16 @@
 <html>
   <head>
     <title>Youtube videos</title>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+       rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+    $(function(){
+    $("#accordion").accordion({
+      collapsible:true
+    });});
+    </script>
     <style>
       body{
         background:#f4f4f4;
@@ -28,22 +38,25 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
-    <script src="script.js"> </script>
+    <script src="js/script.js"> </script>
   </head>
   <body>
+
+    <h1>Youtube videos</h1>
+    <div id="accordion">
     <div id="container">
-      <h1>Youtube videos</h1>
-      <h2>Zee news</h2>
+      <h2>Ted Talks</h2>
       <ul id="results1"></ul>
     </div>
     <div id="container">
-      <h2>Ted Talks</h2>
+      <h2>Netflix</h2>
       <ul id="results2"></ul>
     </div>
     <div id="container">
-      <h2>Whistle 4 CSK</h2>
+      <h2>ThinkQ</h2>
       <ul id="results3"></ul>
     </div>
+  </div>
 
   </body>
 </html>
